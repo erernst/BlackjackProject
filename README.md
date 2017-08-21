@@ -8,7 +8,7 @@ This project is a command-line blackjack game. You have most the capabilities of
 #### Basic Operation
 Disclaimer *THIS CASINO DOES NOT USE 50 CENT CHIPS AND ONLY WORKS IN WHOLE DOLLARS*
 
-The player is asked their name, and how much they would like to buy in for. They are then dealt a hand along with the dealer. The game runs the blackjack checks. If neither person has blackjack, the player is given an option to hit, stay or double. 
+The player is asked their name, and how much they would like to buy in for. They are then dealt a hand along with the dealer. The game runs the blackjack checks. If neither person has blackjack, the player is given an option to hit, stay or double. At this point insurance is not available and neither is even money. Both people getting 21 results in a push.
 
 If the player hits the process continues until they decide to stay. If the player doubles their wager is doubled up to the amount they have in their wallet. At this point they receive 1 card and the dealer gets their turn.
 
