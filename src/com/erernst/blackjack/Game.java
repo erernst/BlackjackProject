@@ -57,9 +57,9 @@ public class Game {
 		Deck deck = new Deck();
 		for(int i = 0; i<6; i++) {
 		deck.generateDeck();}
-		play: while (deck.cardsLeft() > 12 && player.getWallet() > 0) {
+		play: while (deck.cardsLeft() > 12 && player.getWallet() > 5) {
 			if (deck.cardsLeft()<=24) {
-				System.out.println("Cards low, new deck.");
+				System.out.println("Cards low, new shoe.");
 				deck.emptyDeck();
 				for (int i = 0; i < 6; i++) {
 					deck.generateDeck();}
@@ -141,19 +141,16 @@ public class Game {
 				}
 			}
 			
-				
+		}	
 		
 		if (player.getWallet() < 5) {
 			System.out.println(
 					"You only have $" + player.getWallet() + " left in chips, this is not enough for table minimum.");
-				break play;
 		} else if (player.getWallet() == 0) {
 			System.out.println("You are out of chips.");
-			break play;
 		} else if (player.getWallet() > 5) {
 			System.out.println("You leave the table with $" + player.getWallet());
-			break play;
-		}}
+		}
 
 	}
 
