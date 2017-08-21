@@ -3,11 +3,11 @@ package com.erernst.blackjack;
 public class Player {
 	private String name;
 	private Hand hand;
-	private double wallet;
-	public Player(String name, Hand hand, double wallet) {
+	private int wallet;
+	public Player(String name, Hand hand, int wallet) {
 		super();
 		this.name = name;
-		this.hand = hand;
+		this.setHand(hand);
 		this.wallet = wallet;
 	}
 
@@ -27,13 +27,18 @@ public class Player {
 	public void setHand(Hand hand) {
 		this.hand = hand;
 	}
-	public double getWallet() {
+	public int getWallet() {
 		return wallet;
 	}
-	public void setWallet(double wallet) {
+	public void setWallet(int wallet) {
 		this.wallet = wallet;
 	}
 	private void placeWager(int wager) {
+		
+	}
+
+	public void hitOrStay(Deck deck, Hand hd, int s) {
+		// TODO Auto-generated method stub
 		
 	}
 }

@@ -30,9 +30,9 @@ public class Card {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append(suit);
-		builder.append("\t");
 		builder.append(rank);
+		builder.append(" of ");
+		builder.append(suit);
 		return builder.toString();
 	}
 	public Card(Suit s, Rank r) {

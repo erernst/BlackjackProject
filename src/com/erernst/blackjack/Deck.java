@@ -25,15 +25,16 @@ public class Deck {
 	            i++;
 	        }
 	}
-
+	public void emptyDeck() {
+		deck.clear();
+	}
 	public void generateDeck() {
 		for (Suit s : Suit.values()) {
 			for (Rank r : Rank.values()) {
 				deck.add(new Card(s, r));
 			}
 		}
-		shuffleDeck(deck);
-		
+		shuffleDeck(deck);	
 //        for (Card card : deck) {
 //            System.out.println(card);
 //        }
